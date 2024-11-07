@@ -1,0 +1,38 @@
+{
+  "name": "@carlosnunezmx/csv_bun_plugin",
+  "module": "dist/csv_loader.js",
+  "description": "An simple csv loader bun plugin",
+  "types": "./types/csv_loader.d.ts",
+  "homepage": "https://github.com/CarlosNunezMX/aru",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "build": "bun build plugin/csv_loader.ts --target bun --minify --sourcemap=external --outdir dist",
+    "prepublish": "bun run build && bun types",
+    "types": "tsc"
+  },
+  "author": {
+    "email": "carlitosnu41@gmail.com",
+    "url": "https://carlosnunezmx.tech",
+    "name": "CarlosNuñezMX"
+  },
+  "bugs": {
+    "email": "carlitosnu41@gmail.com",
+    "url": "https://github.com/CarlosNunezMX/csv_bun_plugin"
+  },
+  "exports": {
+    ".": {
+      "types": "./types/csv_loader.d.ts",
+      "import": "./dist/csv_loader.js"
+    }
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@fast-csv/parse": "^5.0.2"
+  }
+}
