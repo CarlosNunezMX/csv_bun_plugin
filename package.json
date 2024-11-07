@@ -5,7 +5,7 @@
   "types": "./types/csv_loader.d.ts",
   "homepage": "https://github.com/CarlosNunezMX/csv_bun_plugin",
   "type": "module",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "scripts": {
     "build": "bun build plugin/csv_loader.ts --target bun --minify --sourcemap=external --outdir dist",
     "prepublish": "bun run build && bun types",
