@@ -3,9 +3,9 @@
   "module": "dist/csv_loader.js",
   "description": "An simple csv loader bun plugin",
   "types": "./types/csv_loader.d.ts",
-  "homepage": "https://github.com/CarlosNunezMX/aru",
+  "homepage": "https://github.com/CarlosNunezMX/csv_bun_plugin",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.5.0",
   "scripts": {
     "build": "bun build plugin/csv_loader.ts --target bun --minify --sourcemap=external --outdir dist",
     "prepublish": "bun run build && bun types",
